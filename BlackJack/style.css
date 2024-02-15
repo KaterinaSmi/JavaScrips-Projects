@@ -1,0 +1,56 @@
+h1{
+    color:goldenrod;
+}
+body{
+background-image: url("table.jpg");
+background-repeat: no-repeat;
+color:white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-align: center;
+background-size: cover;
+font-size: 35px;
+}
+
+#message-el{
+
+}
+.startBtn {
+    font-family: 'Poppins';
+    width: 320px;
+    height: 50px;
+    background-color: goldenrod;
+    border-radius: 6px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.startBtn:before {
+    content: '';
+    background: linear-gradient(45deg, #FF0000, #FFF700, #FF7000, #FF00FE, #3FF4EB, #9E00FF, #00BEFF, #FF00DD, #FF0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    
+}
+
+.startBtn:hover:before {
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
