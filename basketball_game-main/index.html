@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Tournament</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="upper_wrapper">
+            <div class="menu">
+                <select name="mySelect" id="selection">
+                    <option value='teams'>Score</option>
+                    <option value='time_display'>Time</option>    
+                    <option value='location_display'>Location</option>
+                    <option value='ticket_display'>Ticket</option>
+                </select>
+                <div class="players_checkbox">
+                    <input type="checkbox" name="players" id="players">Show Players
+                </div>
+            </div>
+        </div>
+        <div class="footer_wrapper">
+            <h1>Today's game</h1>
+            <div class="teams flex_group">
+                <div class="left_team team">
+                    <h2>Blue Horses</h2>
+                    <div class="score">0</div>
+                    <div class="change_score">
+                        <button class="increment">+</button>
+                        <button class="decrement">-</button>
+                    </div>
+                </div>
+                <div class="right_team team">
+                    <h2>Dragons</h2>
+                    <div class="score">0</div>
+                    <div class="change_score">
+                        <button class="increment">+</button>
+                        <button class="decrement">-</button>
+                    </div>
+                </div>
+                <button id="reset">RESET</button>
+            </div>
+            <div class="add_player flex_group hidden">
+                <div class="left_players team">
+                    <h3 class="title">Players</h3>
+                    <div class="player_list">
+                        <div>Tiger</div>
+                        <div>Nixon</div>
+                        <div>6</div>
+                        <div>James</div>
+                        <div>Scott</div>
+                        <div>3</div>
+                        <div>Michael</div>
+                        <div>Karol</div>
+                        <div>4</div>
+                    </div>
+                </div>
+                <div class="right_players team">
+                    <div class="row">
+                        <label for="player_name" class="label">Name:</label>
+                        <input type="text" id="player_name" name="player_name">
+                    </div>
+                    
+                    <div class="row">
+                        <label for="player_last_name" class="label">Last name:</label>
+                        <input type="text" id="player_last_name" name="player_last_name">
+                    </div>
+                    
+                    <div class="row">
+                        <label for="player_number" class="label">Number:</label>
+                        <input type="number" id="player_number" name="player_number">
+                    </div>
+                    <div class="button_wrapper">
+                        <button class="insert">Insert</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="time_display flex_group hidden">
+                <h2 id="current_time"></h2>
+            </div>
+            <div class="location_display flex_group hidden">
+                <h2 id="current_location">Meilahden Basketball Court, Helsinki</h2>
+            </div>
+            <div class="ticket_display flex_group hidden">
+                <label for="userAge" class="label">Please enter your age:</label>
+                <input type="number" id="userAge" name="userAge">
+                <button type="button" id="get_price">Get ticket price</button>
+                <div id="priceResult"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
