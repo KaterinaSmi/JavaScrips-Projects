@@ -1,0 +1,46 @@
+Weather Today - Weather App
+Project Overview
+Weather Today is a simple weather application built with HTML, CSS, and JavaScript. It allows users to search for the current weather in any city and displays relevant weather information, including temperature, humidity, wind speed, and weather conditions.
+
+Table of Contents
+##Features
+##Technologies Used
+##Setup Instructions
+##Usage Guide
+##Customization Options
+##API Information
+
+#Features
+Search for weather information by city name.
+Display current temperature in Celsius.
+Display weather condition with icons (e.g., clouds, rain, clear, drizzle, mist).
+Provide additional weather details such as humidity and wind speed.
+User-friendly interface with clear weather visuals.
+#Technologies Used
+-HTML for the structure of the application.
+-CSS for styling and layout.
+-JavaScript for interactive functionality and API integration.
+-OpenWeatherMap API to fetch real-time weather data.
+#Setup Instructions
+Clone or download the project files to your local environment.
+Open the index.html file in a compatible web browser to view the app.
+Ensure you have an internet connection for API requests.
+#Usage Guide
+Open the HTML file in your web browser.
+Use the search box to enter the name of a city and click the search button.
+If the city is found, the app will display the current weather information, including temperature, humidity, wind speed, and weather condition.
+If the city is not found, an error message will appear.
+#Customization Options
+Search Placeholder: Change the placeholder text in the search box to fit your language or preference.
+Weather Icons: Replace the weather icons in the images folder with your own designs.
+Weather Details: Add more weather information such as pressure, visibility, or sunrise/sunset times.
+#API Information
+This project uses the OpenWeatherMap API to fetch weather data. To use this API, you need an API key, which can be obtained by signing up at OpenWeatherMap. Insert your API key in the JavaScript code:
+
+javascript:
+let apiKey = 'YOUR_API_KEY';
+Ensure you do not share your API key publicly, as it can lead to unauthorized usage or overuse of your API quota.
+
+
+Copyright (c) 2024, Ekaterina Smirnova
+
